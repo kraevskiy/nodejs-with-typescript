@@ -1,0 +1,29 @@
+{
+  "name": "weather-cli-kraievskyi",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Illia Kraievskyi",
+  "license": "ISC",
+  "homepage": "https://example.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kraevskiy/weather-cli.git"
+  },
+  "bugs": {
+    "url": "https://example.com",
+    "email": "kraevskiyfreelanc@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}
