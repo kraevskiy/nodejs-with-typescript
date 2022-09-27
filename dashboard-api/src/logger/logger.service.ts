@@ -13,14 +13,14 @@ export class LoggerService {
 	}
 
 	log(...args: unknown[]) {
-		this.logger.info(args);
+		this.logger.info(...args);
 	}
 
 	error(...args: unknown[]) {
-		this.logger.error(args);
+		this.logger.error(...args);
 	}
 
 	warn(...args: unknown[]) {
-		this.logger.warn(args);
+		this.logger.warn(...args);
 	}
 }
