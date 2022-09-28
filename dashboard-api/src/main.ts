@@ -3,14 +3,15 @@ import { ExceptionFilter } from './errors/exception.filter';
 import { LoggerService } from './logger/logger.service';
 import { UsersController } from './users/users.controller';
 import { Container, ContainerModule, interfaces } from 'inversify';
-import { ILogger } from './logger/logger.interface';
 import { TYPES } from './types';
+import { ILogger } from './logger/logger.interface';
 import { IExceptionFilter } from './errors/exception.filter.interface';
+import { IUsersController } from './users/users.controller.interface';
 
 export const appBindings = new ContainerModule((bind: interfaces.Bind) => {
 	bind<ILogger>(TYPES.ILogger).to(LoggerService);
 	bind<IExceptionFilter>(TYPES.ExceptionFilter).to(ExceptionFilter);
-	bind<UsersController>(TYPES.UsersController).to(UsersController);
+	bind<IUsersController>(TYPES.UsersController).to(UsersController);
 	bind<App>(TYPES.Application).to(App);
 });
 
